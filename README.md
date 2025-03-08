@@ -12,7 +12,7 @@
 
 <h2>Como jogar</h2>
 <h3> O Jogo foi fortemente inspirado em Yu-gi-oh</h3>
-<img src="Assets/Resources/imageHelp.jpg"/>
+<img src="Assets/Resources/helpImage.png"/>
 <h3> As regras são as seguintes</h3>
 <ul>
   <li>O jogador só pode comprar uma carta por turno</li>
