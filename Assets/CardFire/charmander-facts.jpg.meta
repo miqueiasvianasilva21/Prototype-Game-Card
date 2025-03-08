@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      charmander-facts_0: -2210242963573241295
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

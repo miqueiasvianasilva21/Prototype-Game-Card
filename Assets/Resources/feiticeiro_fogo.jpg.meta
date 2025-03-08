@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      feiticeiro_fogo_0: -2396990719581068329
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      golem_fogo_0: 6969180117445530856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

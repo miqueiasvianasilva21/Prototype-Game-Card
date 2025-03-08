@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      feiticeiro_0: 6989213233275994993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

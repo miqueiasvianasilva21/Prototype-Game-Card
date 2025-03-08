@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      background_egito_0: -2099505526004824890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

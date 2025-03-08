@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bb9443f64502f4541b96070495a5a650
+guid: d6a39116a73b1d4428743d567fa835f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7253490939305917728
-    second: dragao_flamejante_0
+      213: 3124106848884338589
+    second: Captura de Tela (6)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dragao_flamejante_0
+      name: Captura de Tela (6)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1440
-        height: 800
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02df7d2249399a460800000000000000
-      internalID: 7253490939305917728
+      spriteID: d9fad1870ae0b5b20800000000000000
+      internalID: 3124106848884338589
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dragao_flamejante_0: 7253490939305917728
+      Captura de Tela (6)_0: 3124106848884338589
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
