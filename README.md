@@ -25,3 +25,5 @@
   <li>A diferença entre os pontos de ataque será deduzida dos pontos de vida do oponente</li>
   <li>Após clicar em "encerrar turno" o inimigo fará suas jogadas e encerrará seu turno</li>
 </ul>
+
+<h3> O jogo está disponível para download <a href="https://drive.google.com/drive/folders/1ufoFCI7P5YoClvbhW5Ah4N86cqq3QY_K?hl=pt-br">aqui</a></h3>
