@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 
@@ -67,8 +68,8 @@ public class TurnManager : MonoBehaviour
 
         if (!isPlayerTurn) // Se for turno do inimigo
         {
-            EnemyTurn();// Inimigo faz suas jogadas
-           
+            StartCoroutine(EnemyTurn());// Inimigo faz suas jogadas
+
         }
     }
 
@@ -78,15 +79,30 @@ public class TurnManager : MonoBehaviour
     {
         return isPlayerTurn;
     }
-    public void EnemyTurn() // Turno do inimigo
+    private IEnumerator EnemyTurn()
     {
         PlayerFieldManager playerFieldManager = FindFirstObjectByType<PlayerFieldManager>();
         EnemyHandManager enemyHandManager = FindFirstObjectByType<EnemyHandManager>();
-        enemyHandManager.DrawCardToEnemyHand(); 
-        enemyHandManager.SummonCard();
         EnemyFieldManager enemyFieldManager = FindFirstObjectByType<EnemyFieldManager>();
+
+        isPlayerTurn = false;
+
+        // Inimigo compra uma carta
+        enemyHandManager.DrawCardToEnemyHand();
+        yield return new WaitForSeconds(1.0f); // Atraso de 1 segundo
+
+        // Inimigo invoca uma carta
+        enemyHandManager.SummonCard();
+        yield return new WaitForSeconds(1.0f);
+
+        // Inimigo ataca
         enemyFieldManager.AttackAllCards();
+        yield return new WaitForSeconds(1.5f);
+
+        // Reinicia a capacidade de ataque das cartas do jogador
         playerFieldManager.ResetAllCardsAttack();
+
+        // Passa o turno para o jogador
         isPlayerTurn = true;
         UpdateTurnCount();
     }

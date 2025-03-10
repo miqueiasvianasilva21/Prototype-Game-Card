@@ -15,19 +15,10 @@ public class EnemyDeckManager : MonoBehaviour
 
     private void Start() // inicialização do deck inimigo
     {
-        EnemyDeck.Instance.AddCard(new Card(20, "minotauro", 800, "um minotauro", "minotauro"));
-        EnemyDeck.Instance.AddCard(new Card(20, "minotauro", 800, "um minotauro", "minotauro"));
-        EnemyDeck.Instance.AddCard(new Card(20, "feiticeiro", 2000, "feiticeiro", "feiticeiro"));
-        EnemyDeck.Instance.AddCard(new Card(20, "minotauro", 200, "um minotauro", "minotauro"));
-        EnemyDeck.Instance.AddCard(new Card(20, "minotauro", 200, "um minotauro", "minotauro"));
-        EnemyDeck.Instance.AddCard(new Card(20, "minotauro", 200, "um minotauro", "minotauro"));
-        EnemyDeck.Instance.AddCard(new Card(20, "minotauro", 200, "um minotauro", "minotauro"));
-        EnemyDeck.Instance.AddCard(new Card(20, "minotauro", 200, "um minotauro", "minotauro"));
+        StarterEnemyDeck starterEnemyDeck = FindFirstObjectByType<StarterEnemyDeck>();
+        starterEnemyDeck.StartEnemyDeck();
         DisplayEnemyDeck();
-        
 
-       
-        
     }
 
     public void DisplayEnemyDeck() // Exibe as cartas no painel de deck do inimigo

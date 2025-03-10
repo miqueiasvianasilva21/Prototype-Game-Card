@@ -7,7 +7,7 @@ using UnityEngine;
 public class StarterDeck : MonoBehaviour
 {
    
-    private void Start()
+    public void Start()
     {
         // Adicionando algumas cartas para teste
         if (Deck.Instance.GetLength() == 0)

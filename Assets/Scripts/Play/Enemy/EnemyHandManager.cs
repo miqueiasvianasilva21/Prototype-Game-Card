@@ -72,23 +72,29 @@ public class EnemyHandManager : MonoBehaviour
             if (cardLowerAttack != null)
             {
                 Debug.Log("Card no campo: " + cardLowerAttack.GetCard().Name);
-                int lowerAttack = cardLowerAttack.GetCard().Attack; // obtém o ataque da carta
+                int lowerAttack = cardLowerAttack.GetCard().Attack;
+                int attackEnemyCard = enemyCard.GetCard().Attack;// obtém o ataque da carta
                 Debug.Log("O menor ataque é: " + lowerAttack);
 
-                if (lowerAttack < enemyCard.GetCard().Attack) // Verifica se o ataque da carta do inimigo é maior do que o ataque da carta dó player
+                if (lowerAttack < attackEnemyCard) // Verifica se o ataque da carta do inimigo é maior do que o ataque da carta dó player
                 {
                     Debug.Log("A carta entrou em conflito: " + cardLowerAttack.GetCard().Name);
                     cardLowerAttack.DestroyCard();
 
 
 
-                    int damage = enemyCard.GetCard().Attack - lowerAttack;// a diferença entre os ataques é deduzida do HP do player
+                    int damage = attackEnemyCard - lowerAttack;// a diferença entre os ataques é deduzida do HP do player
                    
                     gameManager.PlayerTakeDamage(damage);// reduz o hp do player
                 }
+                else if(attackEnemyCard == lowerAttack)
+                {
+                    cardLowerAttack.DestroyCard();
+                    enemyCard.DestroyCard();
+                }
                 else
                 {
-                    Debug.Log("Insuficiente");
+                    Debug.Log("Inimigo resistiu ao ataque");
                 }
             }
             else// Se não há cartas no campo do jogador ele recebe um ataque direto

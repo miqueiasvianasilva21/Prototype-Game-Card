@@ -12,13 +12,16 @@ public class PlayDeckManager : MonoBehaviour
 {
     public GameObject cardPrefab; // Prefab da carta
     public Transform playDeckPanel;// Onde as cartas aparecem para serem compradas
-    private List<Card> remainingCards; // Cartas que ainda não foram compradas
+    private List<Card> remainingCards;// Cartas que ainda não foram compradas
+    
 
 
 
     private void Start()
     {
-        remainingCards = new List<Card>(Deck.Instance.GetCards());
+        ShuffledPlayerDeck shuffledPlayerDeck = FindFirstObjectByType<ShuffledPlayerDeck>();
+
+        remainingCards = shuffledPlayerDeck.ShufflePlayerDeck();
         DisplayPlayDeck();
 
     }

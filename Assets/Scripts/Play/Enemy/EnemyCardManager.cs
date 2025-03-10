@@ -91,9 +91,14 @@ public class EnemyCardManager : MonoBehaviour, IPointerEnterHandler, IPointerCli
                     Destroy(gameObject); // Remove a carta do inimigo do campo
                     selectedPlayerCard.MarkAsAttacked();
                 }
+                else if (attackDamage == card.Attack)
+                {
+                    Destroy(gameObject);
+                    selectedPlayerCard.DestroyCard();
+                }
                 else
                 {
-                    Debug.Log(card.Name + " resistiu ao ataque.");
+                    Debug.Log("A carta resistiu ao ataque");
                 }
             }
             else
@@ -104,7 +109,10 @@ public class EnemyCardManager : MonoBehaviour, IPointerEnterHandler, IPointerCli
        
     }
 
-    
+    public void DestroyCard()
+    {
+        Destroy(gameObject);
+    }
 
 
 
