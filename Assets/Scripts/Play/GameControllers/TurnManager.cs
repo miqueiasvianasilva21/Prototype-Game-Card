@@ -15,7 +15,8 @@ public class TurnManager : MonoBehaviour
 
     private bool playerDrewCard = false; 
     private bool enemyDrewCard = false;
-    private bool isPlayerTurn = true; // o jogo começa com o turno do player
+    private bool isPlayerTurn = true;
+    public GameObject endTurn;// o jogo começa com o turno do player
     private int turnCount = 0;
 
     private void Awake()
@@ -65,6 +66,7 @@ public class TurnManager : MonoBehaviour
 
         Debug.Log("Turno trocado! Agora é turno do " + (isPlayerTurn ? "jogador" : "inimigo"));
         UpdateTurnCount();
+        endTurn.SetActive(false);
 
         if (!isPlayerTurn) // Se for turno do inimigo
         {
@@ -104,6 +106,7 @@ public class TurnManager : MonoBehaviour
 
         // Passa o turno para o jogador
         isPlayerTurn = true;
+        endTurn.SetActive(true);
         UpdateTurnCount();
     }
 }
