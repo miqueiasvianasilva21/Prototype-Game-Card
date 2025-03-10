@@ -15,6 +15,7 @@
 <img src="Assets/Resources/helpImage.png"/>
 <h3> As regras são as seguintes</h3>
 <ul>
+  <li>O deck é embaralhado no ínicio da partida</li>
   <li>O jogador só pode comprar uma carta por turno</li>
   <li>O jogador pode invocar cartas em seu turno</li>
   <li>No primeiro turno o jogador não pode atacar</li>
