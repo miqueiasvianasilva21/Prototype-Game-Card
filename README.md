@@ -22,6 +22,7 @@
   <li> Quando uma carta é selecionada para atacar o jogador deve selecionar a carta que será atacada</li>
   <li>Se não houver cartas no campo do inimigo ele receberá um ataque direto</li>
   <li>Se a carta atacada tiver ataque menor que a carta atacante ela será destruída</li>
+  <li>Se as cartas tiverem o mesmo ataque, ambas são destruídas</li>
   <li>A diferença entre os pontos de ataque será deduzida dos pontos de vida do oponente</li>
   <li>Após clicar em "encerrar turno" o inimigo fará suas jogadas e encerrará seu turno</li>
 </ul>
